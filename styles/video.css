@@ -1,0 +1,56 @@
+.video-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.video-preview {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*It's place for video*/
+.image {
+  height:600px;
+  width:400px;
+  object-fit: cover;
+  object-position:right;
+  border-radius: 45px;
+}
+.video-info {
+  font-weight:bold;
+  font-size:30px;
+  text-decoration:underline;
+
+  padding:20px 20px;
+  margin-left:20px;
+}
+.support-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.edit-button, .remove-button {
+  padding:15px 40px;
+  font-size:30px;
+  border:2px solid black;
+  border-radius:30px;
+  margin-bottom:10px;
+  font-weight:bold;
+  transition:.15s;
+}
+.edit-button:active {
+  background-color:rgb(91, 161, 91);
+  color:white;
+}
+.remove-button:active {
+  opacity: 0.8;
+}
+.edit-button {
+  background-color: white;
+}
+.remove-button {
+  background-color: rgb(224, 67, 67);
+  color:white;
+}
