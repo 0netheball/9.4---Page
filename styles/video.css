@@ -1,8 +1,15 @@
+
 .video-grid {
   display:grid;
   grid-template-columns: 1fr 1fr;
-
+  column-gap:25px;
+  row-gap: 25px;
+  
+  margin-top:80px;
+  padding-right:10px;
+  padding-left:10px;
 }
+
 .video-preview {
   display:flex;
   flex-direction: column;
@@ -39,6 +46,46 @@
   margin-bottom:10px;
   font-weight:bold;
   transition:.15s;
+}
+@media (max-width:767px) {
+  .video-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:10px;
+    row-gap: 10px;
+    
+    padding-right:6px;
+    padding-left:6px;
+  }
+  .image {
+    max-width:80%;
+  }
+  .video-info {
+    font-size:25px;
+  }
+  .support-button {
+    margin-left:20px;
+    display:block;
+  }
+  .edit-button, .remove-button {
+    font-size: 25px;
+    padding:12px 30px;
+  }
+}
+@media (max-width:631px) {
+  .edit-button, .remove-button {
+    font-size: 18px;
+    padding:8px 25px;
+  }
+  .video-grid {
+    display:grid;
+    grid-template-columns: 1fr;
+    column-gap:10px;
+    row-gap: 10px;
+  }
+  .image {
+    width:auto;
+  }
 }
 .edit-button:active {
   background-color:rgb(91, 161, 91);
