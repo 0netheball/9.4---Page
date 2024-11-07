@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @media (max-width:767px) {
+  .video-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:10px;
+    row-gap: 10px;
+    
+    padding-right:6px;
+    padding-left:6px;
+  }
+  .image {
+    max-width:80%;
+  }
+  .video-info {
+    font-size:25px;
+  }
+  .support-button {
+    margin-left:20px;
+    display:block;
+  }
+  .edit-button, .remove-button {
+    font-size: 25px;
+    padding:12px 30px;
+  }
+}
+@media (max-width:550px) {
+  .edit-button, .remove-button {
+    font-size: 18px;
+    padding:8px 25px;
+  }
+  .video-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:10px;
+    row-gap: 10px;
+  }
+  .image {
+    height:300px;
+    width:150px;
+  }
+}
+  </style>
+</head>
+<body>
+  
+</body>
+</html>
