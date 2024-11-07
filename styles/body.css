@@ -39,9 +39,22 @@ body {
   height:300px;
   border-radius:20px;
 }
-.download-file {
+#uploadLink {
+  color:black;
   text-decoration: underline;
-  font-weight:bold;
+}
+.file-input {
+  display: none;
+}
+.upload-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.upload-link:hover {
+  text-decoration: underline;
 }
 
 .name-project {
@@ -52,15 +65,14 @@ body {
   text-decoration: underline;
 }
 
-.description {
-  padding:20px;
-  font-size: 18px;
-  border-style: solid;
+#description {
   border-width: 1%;
-  border-color: grey;
-  border-radius:30px;
+  width:90%;
+  border-radius: 20px;
+  padding:20px;
+  border-color:1px solid grey;
+  font-size:18px;
 }
-
 .publication-box {
   margin-top:100px;
 

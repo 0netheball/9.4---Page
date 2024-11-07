@@ -17,14 +17,31 @@
   
       <div class="main-section">
         <div class="download-box">
-          <div class="download-file">Загрузить файл</div>
+          <a href="#" class="upload-link" id="uploadLink">Загрузить файл</a>
+          <input type="file" class="file-input" id="fileInput">
         </div>
         <div class="name-project">Название проекта...</div>
-        <div class="description">Описание</div>
+        <input id="description" type="text" placeholder="Описание">
         <div class="publication-box">
           <button class="button">Опубликовать</button>
         </div>
       </div>
     </div>
+    <script>
+      const uploadLink = document.getElementById('uploadLink');
+      const fileInput = document.getElementById('fileInput');
+
+      uploadLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        fileInput.click();
+      });
+
+      fileInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+          alert(`Вы выбрали файл: ${file.name}`);
+        }
+      });
+    </script>
   </body>
 </hmtl>
